@@ -1,0 +1,104 @@
+<!--C:\Users\FRANC\OneDrive\Documents\Schule\Informatik\5.Pk\reveal.js>npm start-->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>5.Pk</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="css/5.pk.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-auto-animate data-background-color="rgb(91, 139, 50)">
+					<img class="r-stretch" src="/assets/straightMinecraftLogo.png">
+				</section>
+
+				<section data-auto-animate data-background-color="rgb(91, 139, 50)">
+					<div class="title">
+						<img src="/assets/straightMinecraftLogo.png" width="400px" height="auto">
+					</div>
+					<div class="alignleft">
+						<li>ein Sandbox Videospiel</li>
+						<li>gehört seit 2014 zu Microsoft</li>
+						<li>verkaufte sich bis heute ca. 238 Millionen mal</li>
+					</div>
+				</section>
+
+				<section>
+					<section data-background-image="/assets/MinecraftBild1.jpg"></section>
+					<section data-background-image="/assets/MinecraftBild2.jpg"></section>
+					<section data-background-image="/assets/MinecraftBild3.jpg"></section>
+					<section data-background-image="/assets/MinecraftBild4.jpg"></section>
+				</section>
+				
+				<section data-background-video="/assets/CaveTour.mp4"></section>
+
+				<section>
+					<h3>Generation künstlicher Welten - wie kann ein Höhlensystem für ein Spiel effizient algorithmisch generiert werden?</h3>
+				</section>
+
+				<section data-transition="slide-in fade-out">
+					<h3>Gliederung</h3>
+					<div class="alignleft">
+						<ol>
+							<li>Mein Projekt</li>
+							<li>Pseudozufall</li>
+							<li>Random Walker</li>
+							<li>Cellular Automata</li>
+							<li>Perlin Noise</li>
+							<li>Fazit</li>
+						</ol>
+					</div>
+				</section>
+
+				<section data-transition="none-in slide-out">
+					<h3>Gliederung</h3>
+					<div class="alignleft">
+						<ol>
+							<li>Mein Projekt</li>
+							<li>Pseudozufall</li>
+							<li>Random Walker &larr; Vorführung</li>
+							<li>Cellular Automata &larr; Vorführung</li>
+							<li>Perlin Noise &larr; Vorführung</li>
+							<li>Fazit</li>
+						</ol>
+					</div>
+				</section>
+					
+				<section>
+					<h3>Mein Projekt</h3>
+				</section>
+
+				
+
+			</div>
+		</div>
+		<!--<script src="plugin/appearance/appearance.js"></script>-->
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				touch: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes]
+			});
+		</script>
+	</body>
+</html>
