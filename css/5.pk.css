@@ -1,10 +1,15 @@
 .title{
     position: absolute;
-    top: -300px;
+    top: -70%;
     display: block;
     left: 50%;
-    transform: translate(-50%);
-    
+    transform: translate(-50%); 
+}
+
+.makeItLower{
+    position: fixed;
+    top: 100px;
+    display: block;
 }
 
 .container{
