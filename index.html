@@ -11,8 +11,8 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
-		<link rel="stylesheet" href="css/5.pk.css">
-
+		<link rel="stylesheet" href="5.pk.css">
+		<script src="5.pk.js"></script>
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
@@ -21,32 +21,60 @@
 			<div class="slides">
 
 				<section data-auto-animate>
-					<img class="r-stretch" src="/assets/straightMinecraftLogo.png">
+					<img class="r-stretch"f src="/assets/straightMinecraftLogo.png">
+					<div class="imageSource" style="right: 160%; top: 115%; left: -20%;">Bild 1</div>
+				</section>
+
+				
+				<section data-auto-animate>
+					<div class="title2">
+						<img src="/assets/straightMinecraftLogo.png" width="400px" height="auto">
+					</div>
+					<div class="image2">
+						<img src="/assets/MinecraftAddImage.jpg" width="600px" height="360px">
+					</div>
+					<div class="imageSource" style="right: 74%; bottom: 18%; color: black; font-weight: bold;">Bild 2</div>
 				</section>
 
 				<section data-auto-animate>
-					<div class="title">
+					<div class="title2">
 						<img src="/assets/straightMinecraftLogo.png" width="400px" height="auto">
 					</div>
-					<div class="container">
-						<div class="col">
-							<div class="alignleft">
-								<li>ein Sandbox Videospiel</li>
-								<li>gehört seit 2014 zu Microsoft</li>
-								<li>verkaufte sich bis heute ca. 238 Millionen mal</li>
-							</div>
-						</div>
-						<div class="col">
-							<img src="/assets/MinecraftAddImage.webp">
-						</div>
+					<div class="image2">
+						<img src="assets/Minecon.webp" width="550px" height="auto">
 					</div>
+					<div class="imageSource" style="right: 72%; bottom: 18%; color: white; font-weight: bold;">Bild 3</div>
+				</section>
+
+				<section data-auto-animate>
+					<div class="title2">
+						<img src="/assets/straightMinecraftLogo.png" width="400px" height="auto">
+					</div>
+					<div class="image2">
+						<img src="assets/minecraft-content-on-youtube.png" width="550px" height="auto">
+					</div>
+					<div class="imageSource" style="right: 72%; bottom: 18%; color: black; font-weight: bold;">Bild 4</div>
+				</section>
+
+				<section data-background-image="/assets/MinecraftBild1.jpg" data-transition="none-in none-out">
+					<div class="imageSource" style="right: 110%; bottom: -700px; color: white; font-weight: bold;">Bild 5</div>
+				</section>
+
+				<section data-background-image="/assets/MinecraftBild2.jpg" data-transition="none-in none-out">
+					<div class="imageSource" style="right: 110%; bottom: -700px; color: white; font-weight: bold;">Bild 6</div>
+				</section>
+
+				<section data-background-image="/assets/MinecraftBild3.jpg" data-transition="none-in none-out">
+					<div class="imageSource" style="right: 110%; bottom: -700px; color: white; font-weight: bold;">Bild 7</div>
+				</section>
+
+				<section data-background-image="/assets/MinecraftBild4.jpg" data-transition="none-in none-out">
+					<div class="imageSource" style="right: 110%; bottom: -700px; color: white; font-weight: bold;">Bild 8</div>
 				</section>
 
 				<section>
-					<section data-background-image="/assets/MinecraftBild1.jpg"></section>
-					<section data-background-image="/assets/MinecraftBild2.jpg"></section>
-					<section data-background-image="/assets/MinecraftBild3.jpg"></section>
-					<section data-background-image="/assets/MinecraftBild4.jpg"></section>
+					<img class="r-stretch" src="assets/MCvsEath.png">
+					<div class="imageSource" style="right: 93%; bottom: 5%; color: white; font-weight: bold;">Bild 9</div>
 				</section>
 				
 				<section data-background-video="/assets/CaveTour2.mp4"></section>
@@ -57,30 +85,30 @@
 
 				<section data-transition="slide-in fade-out">
 					<h3>Gliederung</h3>
-					<div class="alignleft">
+					<div class="text6">
 						<ol>
 							<li>Mein Projekt</li>
-							<li>Pseudozufall</li>
-							<li>Random Walker</li>
+							<li>Random Walk</li>
 							<li>Cellular Automata</li>
 							<li>Perlin Noise</li>
 							<li>Vergleich</li>
 							<li>Fazit</li>
+							<li>Quellen</li>
 						</ol>
 					</div>
 				</section>
 
 				<section data-transition="none-in slide-out">
 					<h3>Gliederung</h3>
-					<div class="alignleft">
+					<div class="text6">
 						<ol>
 							<li>Mein Projekt</li>
-							<li>Pseudozufall</li>
-							<li>Random Walker &larr; Vorführung</li>
-							<li>Cellular Automata &larr; Vorführung</li>
-							<li>Perlin Noise &larr; Vorführung</li>
+							<li>Random Walk</li>
+							<li>Cellular Automata</li>
+							<li>Perlin Noise</li>
 							<li>Vergleich</li>
 							<li>Fazit</li>
+							<li>Quellen (+ kurze Vorführung)</li>
 						</ol>
 					</div>
 				</section>
@@ -122,8 +150,190 @@
 						</div>
 					</div>
 				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Kriterien</h3>
+				</section>
 				
-				<section data-auto-animate data-auto-animate-id="two">	
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Kriterien</h3>
+					<ol>
+						<div class="fragment"><li>Kriterium: Rechenaufwand</li></div>
+						<div class="fragment"><li>Kriterium: Flexibilität</li></div>	
+						<div class="fragment"><li>Kriterium: Können und Nutzten</li></div>
+						<div class="fragment"><li>Kriterium: Höhlenqualität</li></div>
+						
+					</ol>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Höhlenqualität</h3>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Höhlenqualität</h3>
+					<div class="r-stack">
+						<img class="fragment fade-out" data-fragment-index="0" src="/assets/2DGamecave1.png" height="500" width="auto">
+						<div class="fragment fade-out" data-fragment-index="0"><div class="imageSource" style="right: 90%; bottom: 3%; color: white; font-weight: bold;">Bild 10</div></div>
+						<img class="fragment current-visible" data-fragment-index="0" src="/assets/2DGamecave2.jpg" height="500" width="auto">
+						<div class="fragment current-visible" data-fragment-index="0"><div class="imageSource" style="right: 86%; bottom: 3%; color: white; font-weight: bold;">Bild 11</div></div>
+						<img class="fragment current-visible" data-fragment-index="1" src="/assets/2DGamecave3.jpg" height="500" width="auto">
+						<div class="fragment current-visible" data-fragment-index="1"><div class="imageSource" style="right: 76%; bottom: 3%; color: white; font-weight: bold;">Bild 12</div></div>
+						<img class="fragment current-visible" data-fragment-index="2" src="/assets/2DGamecave4.png" height="500" width="auto">
+						<div class="fragment current-visible" data-fragment-index="2"><div class="imageSource" style="right: 79%; bottom: 3%; color: white; font-weight: bold;">Bild 13</div></div>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Höhlenqualität</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/2DGamecave4.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<ol>
+								<div class="text25">
+									<div class="fragment"><li>Erreichbarkeit</li></div>
+									<div class="fragment"><li>wenig Wiederholung</li></div>
+									<div class="fragment"><li>Realismus</li></div>
+								</div>
+							</ol>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Funktionsweise</h3>
+				</section>
+
+				<section data-auto-animate>
+					<img class="r-stretch" src="/assets/3x3blackwhite.png">
+				</section>
+
+				<section data-auto-animate data-transition="none-out">
+					<div class="container">
+						<div class="col">
+							<img src="/assets/3x3blackwhite.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<pre><code data-trim data-noescape>
+								map
+							</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="none-in none-out">
+					<div class="container">
+						<div class="col">
+							<img src="/assets/3x3blackwhite2.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<pre><code data-trim data-noescape>
+								map = [Zeile1, Zeile2, Zeile3]
+							</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="none-in none-out">
+					<div class="container">
+						<div class="col">
+							<img src="/assets/3x3blackwhite3.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<pre><code data-trim data-noescape>
+								map = [Zeile1, Zeile2, Zeile3]
+								map = [[?, ?, ?],
+												[?, ?, ?],
+												[?, ?, ?]]
+							</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="none-in none-out">
+					<div class="container">
+						<div class="col">
+							<img src="/assets/3x3blackwhite4.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<pre><code data-trim data-noescape>
+								map = [Zeile1, Zeile2, Zeile3]
+								map = [[?, ?, ?],
+												[?, ?, ?],
+												[?, ?, ?]]
+							</code></pre>
+
+							<pre><code data-trim data-noescape>
+								<p>white = 0  (Höhle)</p>
+								<p>black = 1  (Gestein)</p>
+							</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="none-in none-out">
+					<div class="container">
+						<div class="col">
+							<img src="/assets/3x3blackwhite.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<pre><code data-trim data-noescape>
+								map = [Zeile1, Zeile2, Zeile3]
+								map = [[?, ?, ?],
+												[?, ?, ?],
+												[?, ?, ?]]
+							</code></pre>
+
+							<pre><code data-trim data-noescape>
+								<p>white = 0  (Höhle)</p>
+								<p>black = 1  (Gestein)</p>
+							</code></pre>
+
+							<pre><code data-trim data-noescape>
+								Zeile 1: 0 1 0
+								Zeile 2: 0 1 1
+								Zeile 3: 1 0 1
+							</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="none-in slide-out">
+					<div class="container">
+						<div class="col">
+							<img src="/assets/3x3blackwhite.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<pre><code data-trim data-noescape>
+								map = [Zeile1, Zeile2, Zeile3]
+								map = [[?, ?, ?],
+												[?, ?, ?],
+												[?, ?, ?]]
+							</code></pre>
+
+							<pre><code data-trim data-noescape>
+								<p>white = 0  (Höhle)</p>
+								<p>black = 1  (Gestein)</p>
+							</code></pre>
+
+							<pre><code data-trim data-noescape>
+								Zeile 1: 0 1 0
+								Zeile 2: 0 1 1
+								Zeile 3: 1 0 1
+							</code></pre>
+
+							<pre><code data-trim data-noescape>
+								map = [[0, 1, 0],
+												[0, 1, 1],
+												[1, 0, 1]]
+							</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate>	
 					<div class="container">
 						<div class="col">
 							<img src="/assets/Unity logo.png" width="270px" height="auto">
@@ -134,19 +344,514 @@
 					</div>
 				</section>
 
-				<section data-auto-animate data-auto-animate-id="two">
-					<div class="makeItLower">
+				<section data-auto-animate>
+					<div class="title16">
+						<img src="/assets/UnityLogoCroped.png" width="140px" height="auto">
+					</div>
+					<div class="makeItLower16">
 						<img src="/assets/UnityScreenShot.png" width="1000px" height="auto">
 					</div>
-					<div class="title">
-						<img src="/assets/UnityLogoCroped.png" width="140px" height="auto">
+					
+				</section>	
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Random Walk</h3>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two"> 
+					<h3>Random Walk</h3>
+					<img src="/assets/RWCave.png" width="400px" height="auto">
+				</section>
+
+				<section>
+					<pre><code data-trim data-noescape>
+						func DigCorridors()
+					</code></pre>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<div class="r-stack">
+						<img src="/assets/RWStep1.png" width="700" height="700">
+						<div class="Counter28"><p>0</p></div>
+						<img class="fragment" data-fragment-index="0" src="/assets/RWStep2.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="0"><div class="Counter28"><p>0</p></div></div>
+						<img class="fragment" data-fragment-index="1" src="/assets/RWStep3.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="1"><div class="Counter28"><p>0</p></div></div>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<img src="/assets/RWStep3.png" width="500" height="500">
+					<p><div class="image28"><pre><code data-trim data-noescape>
+						UnityEngine.Random.Range(1, 4)
+					</code></div></pre></p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<div class="r-stack">
+						<img src="/assets/RWStep3.png" width="700" height="700">
+						<div class="Counter28"><p>0</p></div>
+						<img class="fragment" data-fragment-index="0" src="/assets/RWStep4.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="0"><div class="Counter28"><p>1</p></div></div>
+						<img class="fragment" data-fragment-index="1" src="/assets/RWStep5.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="1"><div class="Counter28"><p>1</p></div></div>
+						<img class="fragment" data-fragment-index="2" src="/assets/RWStep6.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="2"><div class="Counter28"><p>2</p></div></div>
+						<img class="fragment" data-fragment-index="3" src="/assets/RWStep7.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="3"><div class="Counter28"><p>2</p></div></div>
+						<img class="fragment" data-fragment-index="4" src="/assets/RWStep8.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="4"><div class="Counter28"><p>2</p></div></div>
+						<img class="fragment" data-fragment-index="5" src="/assets/RWStep9.png" width="700" height="700">
+						<div class="fragment"  data-fragment-index="5"><div class="Counter28"><p>2</p></div></div>
+						<img class="fragment" data-fragment-index="6" src="/assets/RWStep10.png" width="700" height="700">
+						<div class="fragment" data-fragment-index="6"><div class="Counter28"><p>3</p></div></div>
 					</div>
 				</section>
 
 				<section>
-					<h3>Random Walker</h3>
+					<img class="r-stretch" src="/assets/RWCave.png">
+				</section>
+
+				<section data-auto-animate>
+					<h3>Vorteile</h3>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Vorteile</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/RWCave.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<ol>
+								<div class="text42">
+									<li>hohe Simplizität</li>
+									<li>Rechenaufwand eher gering</li>
+									<li>wenig Wiederholung</li>
+								</div>
+							</ol>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Nachteile</h3>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Nachteile</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/RWCave.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<ol>
+								<div class="text44">
+									<li>wenig Flexibilität</li>
+									<li><p>kann nur von einem Punkt aus eine Höhle generieren</li>
+									<li>wenig Realismus</li>
+									<li><p>Rechenaufwand wird viel <br>größer bei größen Höhlen</p></li>
+								</div>
+							</ol>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Cellular Automata</h3>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Cellular Automata</h3>
+					<img src="/assets/CACave.png" width="400px" height="auto">
+				</section>
+
+				<section>
+					<h3>Funktionsweise</h3>
+				</section>
+
+				<section data-auto-animate>
+					<img class="r-stretch" src="/assets/NoiseCA.png">
+				</section>
+
+				<section data-auto-animate>
+					<img src="/assets/NoiseCA.png" width="400px" height="auto">
+					<pre><code data-trim data-noescape>
+						System.Random
+						UnityEngine.Random
+					</code></pre> 
+				</section>
+
+				<section>
+					<pre><code data-trim data-noescape>
+						func SmoothMap()
+					</code></pre> 
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<div class="r-stack">
+						<img src="/assets/7x7noiseCA1.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="0" src="/assets/7x7noiseCA2.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="1" src="/assets/7x7noiseCA3.png" width="700" height="700">
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<img src="/assets/7x7noiseCA3.png" width="500" height="500">
+					<div class="Image47"><img src="/assets/7x7noiseCA1.png" width="500" height="500"></div>
+					<p><div class="image28"><pre><code data-trim data-noescape>
+						1.Regel: Wenn Anzahl der Nachbarn > 4 &rarr; Pixel = 1
+						2.Regel: Wenn Anzahl der Nachbarn < 4 &rarr; Pixel = 0
+					</code></div></pre></p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<div class="r-stack">
+						<img src="/assets/7x7noiseCA1.png"  width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="0" src="/assets/7x7noiseCA4.png" width="700" height="700">
+						<img class="fragment fade-out" data-fragment-index="0" src="/assets/7x7noiseCA3.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="1" src="/assets/7x7noiseCA5.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="2" src="/assets/7x7noiseCA6.png" width="700" height="700">
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<img src="/assets/7x7noiseCA6.png" width="500" height="500">
+					<div class="Image47"><img src="/assets/7x7noiseCA1.png" width="500" height="500"></div>
+					<p><div class="image28"><pre><code data-trim data-noescape>
+						1.Regel: Wenn Anzahl der Nachbarn > 4 &rarr; Pixel = 1
+						2.Regel: Wenn Anzahl der Nachbarn < 4 &rarr; Pixel = 0
+					</code></div></pre></p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<div class="r-stack">
+						<img src="/assets/7x7noiseCA1.png"  width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="0" src="/assets/7x7noiseCA7.png" width="700" height="700">
+						<img class="fragment fade-out" data-fragment-index="0" src="/assets/7x7noiseCA6.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="1" src="/assets/7x7noiseCA8.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="2" src="/assets/7x7noiseCA9.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="3" src="/assets/7x7noiseCA10.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="4" src="/assets/7x7noiseCA11.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="5" src="/assets/7x7noiseCA12.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="6" src="/assets/7x7noiseCA13.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="7" src="/assets/7x7noiseCA14.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="8" src="/assets/7x7noiseCA15.png" width="700" height="700">
+						<img class="fragment current-visible" data-fragment-index="9" src="/assets/7x7noiseCA16.png" width="700" height="700">
+					</div>
+				</section>
+
+				<section>
+					<div class="r-stack">
+						<img class="fragment fade-out" data-fragment-index="0" src="/assets/NoiseCA2.png" width="700" height="700">
+						<div class="fragment fade-out"  data-fragment-index="0"><div class="Counter52"> <h3>&nbsp;0&nbsp;</h3></div></div>
+						<img class="fragment current-visible" data-fragment-index="0" src="/assets/CA1Smooth.png" width="700" height="700">
+						<div class="fragment current-visible"  data-fragment-index="0"><div class="Counter52"><h3>&nbsp;1&nbsp;</h3></div></div>
+						<img class="fragment current-visible" data-fragment-index="1" src="/assets/CA2Smooth.png" width="700" height="700">
+						<div class="fragment current-visible"  data-fragment-index="1"><div class="Counter52"><h3>&nbsp;2&nbsp;</h3></div></div>
+						<img class="fragment current-visible" data-fragment-index="2" src="/assets/CA3Smooth.png" width="700" height="700">
+						<div class="fragment current-visible"  data-fragment-index="2"><div class="Counter52"><h3>&nbsp;3&nbsp;</h3></div></div>
+						<img class="fragment current-visible" data-fragment-index="3" src="/assets/CA4Smooth.png" width="700" height="700">
+						<div class="fragment current-visible"  data-fragment-index="3"><div class="Counter52"><h3>&nbsp;4&nbsp;</h3></div></div>
+						<img class="fragment current-visible" data-fragment-index="4" src="/assets/CA5Smooth.png" width="700" height="700">
+						<div class="fragment current-visible"  data-fragment-index="4"><div class="Counter52"><h3>&nbsp;5&nbsp;</h3></div></div>
+						<img class="fragment current-visible" data-fragment-index="5" src="/assets/CA6Smooth.png" width="700" height="700">
+						<div class="fragment current-visible"  data-fragment-index="5"><div class="Counter52"><h3>&nbsp;6&nbsp;</h3></div></div>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Vorteile</h3>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Vorteile</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/CACave.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<ol>
+								<div class="text58">
+									<li>generiert mehere Höhlensysteme</li>
+									<li>natürliches Aussehen</li>
+									<li>wenig Wiederholung</li>
+									<li>sehr Flexibel</li>
+									<li>Rechenaufwand bleibt linear</li>
+								</div>
+							</ol>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Nachteile</h3>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Nachteile</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/CACave.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<ol>
+								<div class="text60">
+									<li>kann keine einzelnen Höhlen generieren</li>
+									<li><p>wenig Verbindungen zwischen den Höhlen</p></li>
+								</div>
+							</ol>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Perlin Noise</h3	>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Perlin Noise</h3>
+					<img src="/assets/PNCave.png" width="400px" height="auto">
 				</section>
 				
+				<section data-auto-animate>
+					<h3>Perlin Noise</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/PNCave.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<img src="/assets/Ken_Perlin.png" width="400px" height="auto">
+							<div class="imageSource" style="right: 38%; bottom: 6%; color: white; font-weight: bold;">Bild 14</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Perlin Noise</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/Ken_Perlin.png" width="400px" height="auto">
+							<div class="imageSource" style="right: 88%; bottom: 6%; color: white; font-weight: bold;">Bild 14</div>
+						</div>
+						<div class="col">
+							<img src="/assets/PerlinNoisePure.png" width="400px" height="auto">
+							<div class="imageSource" style="right: 39%; bottom: 21%; color: white; font-weight: bold;">Bild 15</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<img class="r-stretch" src="/assets/PerlinNoisePure.png">
+					<div class="imageSource" style="right: 76%; bottom: 5%; color: white; font-weight: bold;">Bild 15</div>
+				</section>
+
+				<section data-auto-animate>
+					<img src="/assets/PerlinNoisePure.png" width="500px" height="auto">
+					<div class="imageSource" style="right: 69%; bottom: 18%; color: white; font-weight: bold;">Bild 15</div>
+					<p><div class="image28"><pre><code data-trim data-noescape>
+						Mathf.PerlinNoise()
+					</code></div></pre></p>
+				</section>
+
+				<section data-auto-animate data-transition="none-out">
+					<img class="r-stretch" src="/assets/PerlinNoisePure.png">
+					<div class="imageSource" style="right: 76%; bottom: 5%; color: white; font-weight: bold;">Bild 15</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two" data-transition="none-in">
+					<img class="r-stretch" src="/assets/PerlinNoisePure2.png">
+					<div class="imageSource" style="right: 76%; bottom: 5%; color: white; font-weight: bold;">Bild 15</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<img src="/assets/PerlinNoisePure2.png" width="500px" height="auto">
+					<div class="imageSource" style="right: 63%; bottom: 26%; color: white; font-weight: bold;">Bild 15</div>
+					<p><div class="image28"><pre><code data-trim data-noescape>
+						Wenn Mathf.PerlinNoise bei Pixel > Grenzwert &rarr; Pixel = 1
+						Wenn Mathf.PerlinNoise bei Pixel < Grenzwert &rarr; Pixel = 0
+					</code></div></pre></p>
+				</section>
+
+				<section>
+					<img class="r-stretch" src="/assets/PNCave.png">
+				</section>
+
+				<section data-auto-animate>
+					<h3>Vorteile</h3>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Vorteile</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/PNCave.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<ol>
+								<div class="text72">
+									<li>generiert mehere Höhlensysteme</li>
+									<li>natürliches Aussehen</li>
+									<li>sehr geringer Rechenaufwand</li>
+									<li>Potenzial für Flexibilität</li>
+									<li>hohe Erreichbarkeit</li>
+								</div>
+							</ol>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Nachteile</h3>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="two">
+					<h3>Nachteile</h3>
+					<div class="container">
+						<div class="col">
+							<img src="/assets/PNCave.png" width="400px" height="auto">
+						</div>
+						<div class="col">
+							<ol>
+								<div class="text75">
+									<li>kann keine einzelnen <br>Höhlen generieren</li>
+									<li><p>ohne Optimierung nur wenig Flexibilität</p></li>
+									<li>viele Wiederholungen</li>
+									<li><p>erzeugt manchmal gerade Linien</p></li>
+								</div>
+							</ol>
+						</div>
+					</div>
+				</section>
+				
+				<section data-auto-animate data-auto-animate-id="3">
+					<h3>Vergleich</h3>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="3"> 
+					<h3>Vergleich</h3>
+					<ol><div class="text76">
+						<div class="fragment"><li>Random Walk generiert qualikativ minderwertige Höhlen.</li></div>
+						<div class="fragment"><li>Random Walk ist am einfachsten zu implementieren.</li></div>
+						<div class="fragment"><li>Perlin Noise und Cellular Automata generieren natürlich aussehende Höhlensysteme.</li></div>
+						<div class="fragment"><li>Die Erreichbarkeit ist bei Perlin Noise am besten.</li></div>
+						<div class="fragment"><li>Random Walk und Cellular Automata sind am vielseitigsten.</li></div>
+						<div class="fragment"><li>Cellular Automata ist am flexibelsten.</li></div>
+					</div></ol>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Fazit</h3>
+				</section>
+
+				<!--<section data-auto-animate>
+					<h3>Es gibt zahlreiche Möglichkeiten, Höhlensysteme algorithmisch zu generieren. Dabei gibt es keinen „besten“ Algorithmus, sondern nur welche die genügen.</h3>
+				</section>-->
+
+				<section>
+					<h3>Quellen</h3>
+				</section>
+
+				<section>
+					<h4>Printquellen</h4>
+					<div class="Quellen79">
+					<p>Michael, vom 11.10.2016 + Uni, Auflage<br>
+					„PCG-Based Game Design Patterns“</p>
+					<p>Cu,  Juncheng, „Procedural cave generation“, vom 08.2011<br>
+					https://ro.uow.edu.au/cgi/viewcontent.cgi?article=4495&context=theses&httpsredir=1&referer= </p>
+					<p>Mark, Benjamin (& Tudor Berechet), „Procedural 3D Cave Generation“, vom September 2014<br>
+					http://benjaminmark.dk/Procedural_3D_Cave_Generation.pdf</p>
+					<p>Perlin, Ken,<br> 
+					https://mrl.cs.nyu.edu/~perlin/paper445.pdf</p>
+					</div>	
+				</section>
+
+				<section>
+					<h4>Angeguckte Projekte</h4>
+					<div class="Quellen79">
+						<p>PitiIT, „What is Generics and how to use it in Unity“, vom 20.02.2022<br>
+						https://www.youtube.com/watch?v=6FuUVWOgFY0</p>
+						<p>PitiIT, „Unity Tutorial: Procedural Cave Generation Step by Step“, vom 19.05.2022<br>
+						https://www.youtube.com/watch?v=u2i8Ga4phBA</p>
+						<p>Piotr, „Grid“, vom 17.05.2022<br>
+						https://github.com/x1r15/Grid/blob/master/Direction.cs</p>
+						<p>Lague, Sebastian, „MapGenerator“, vom 04.04.2023<br>
+						https://github.com/SebLague/Procedural-Cave-Generation/blob/master/Episode%2001/MapGenerator.cs</p>
+					</div>
+				</section>
+				
+				<section>
+					<h4>Webquellen</h4>
+					<div class="Quellen79">
+						<p>Wells III, Robert Earl, „How Big Is a Minecraft World?“, vom 18.01.2022<br>
+						https://www.lifewire.com/how-big-is-a-minecraft-world-5212822</p>
+						<p>SpacePak, „HOW BIG IS MINECRAFT - Minecraft Science“, vom 09.08.2015<br>
+						https://www.youtube.com/watch?v=ma4eQ3GNXBc</p>
+						<p>DigiDigger, „How does procedural generation work? | Bitwise“, vom 29.01.2020<br>
+						https://www.youtube.com/watch?v=-POwgollFeY</p>
+						<p>Compton, Kate, „Practical Procedural Generation for Everyone“, vom 31.05.2017<br>
+						https://www.youtube.com/watch?v=WumyfLEa6bU</p>
+						<p>keine bekannten Autoren, Liste von Spielen die Procedural Generation verwenden<br>
+						https://en.wikipedia.org/wiki/List_of_games_using_procedural_generation</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Für Perlin Noise(Gradient Noise)</h4>
+					<div class="Quellen79">
+						<p>Kniberg, Henrik, „Minecraft terrain generation in a nutshell“, vom 06.02.2022<br>
+						https://www.youtube.com/watch?v=CSa5O6knuwI</p>
+						<p>Shiffman, Daniel, „I.5: Perlin Noise - The Nature of Code“, vom 27.07.2015<br>
+						https://www.youtube.com/watch?v=8ZEMLCnn8v0</p>
+						<p>Unity Technologies, „Mathf.PerlinNoise“, vom 03.03.2023<br>
+						https://docs.unity3d.com/ScriptReference/Mathf.PerlinNoise</p>
+						<p>Eevee, „Perlin Noise“ (Mathematische Erklärung), vom 29.05.2016<br>
+						https://eev.ee/blog/2016/05/29/perlin-noise/</p>
+						<p>keine bekannten Autoren, Erklärung vom „Smoothstep“<br>
+						https://en.wikipedia.org/wiki/Smoothstep</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Für Cellular Automata</h4>
+					<div class="Quellen79">
+						<p>Shiffman, Daniel, „7.1: Cellular Automata - The Nature of Code“, vom 10.08.2015<br>
+						https://www.youtube.com/watch?v=DKGodqDs9sA</p>
+						<p>Lague, Sebastian, „[Unity] Procedural Cave Generation“, vom 09.02.2015<br>
+						https://www.youtube.com/watch?v=v7yyZZjF1z4</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Für die Präsentation</h4>
+					<div class="Quellen79">
+						<p>Hakim El Hattab, „reveal.js“, vom 8.März.2023<br>
+						https://github.com/hakimel/reveal.js</p>
+						<p>Hakim El Hattab, „reveal.js - the website“<br>
+						https://revealjs.com</p>
+						<p>Bild 1: https://www.hiclipart.com/free-transparent-background-png-clipart-qmzqq/download</p>
+						<p>Bild 2: http://m.gettywallpapers.com/wp-content/uploads/2020/05/Minecraft-HD-Wallpaper.jpg</p>
+						<p>Bild 3: https://www.polygon.com/2014/8/23/6060361/minecon-cancelled-london-2015</p>
+						<p>Bild 4: https://www.minecraftglobal.com/wp-content/uploads/2022/04/minecraft-content-on-youtube.png</p>
+						<p>Bild 5: https://twitter.com/henrikkniberg/status/1414978370971045900/photo/1</p>
+						<p>Bild 6: https://www.rockpapershotgun.com/best-minecraft-seeds-java-survival-seeds</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Für die Präsentation</h4>
+					<div class="Quellen79">
+						<p>Bild 7: https://www.rockpapershotgun.com/best-minecraft-seeds-java-survival-seeds</p>
+						<p>Bild 8: https://www.rockpapershotgun.com/best-minecraft-seeds-java-survival-seeds</p>
+						<p>Bild 9: https://external-preview.redd.it/rvL0TxivVAdt2wyfaq80hLSWxsWWNx0F5WSW4i4tBks.jpg?auto=webp&v=enabled&s=ec74e01d99675d54bbb6a64e1e7116ac3c4ef514</p>
+						<p>Bild 10: https://img.itch.zone/aW1nLzIyMjE5NTUucG5n/original/21VVEA.png</p>
+						<p>Bild 11: https://media.indiedb.com/cache/images/games/1/64/63413/thumb_620x2000/ss_250689bdc31b37f47065e4aa74cc1dab3.jpg</p>
+						<p>Bild 12: https://i.pinimg.com/736x/c0/c2/8c/c0c28c7d33e94502fe52b425317d2cf2.jpg</p>
+						<p>Bild 13: https://i.imgur.com/729PyNY.png</p>
+						<p>Bild 14: https://cs.nyu.edu/~perlin/imgs/Ken_Perlin.png</p>
+						<p>Bild 15: https://docs.unity3d.com/StaticFiles/ScriptRefImages/PerlinExample.png</p>
+					</div>
+				</section>
 
 			</div>
 		</div>
@@ -162,6 +867,7 @@
 			Reveal.initialize({
 				hash: true,
 				touch: false,
+				slideNumber: false,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes]
